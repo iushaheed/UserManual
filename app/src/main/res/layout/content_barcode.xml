@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="co.bondtech.usermanual.AddCategory"
-    tools:showIn="@layout/app_bar_category"
+    tools:context="co.bondtech.usermanual.ScanBarcode"
+    tools:showIn="@layout/app_bar_barcode"
     >
     <RelativeLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:src="@drawable/c" />
+                android:src="@drawable/e" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -59,7 +59,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="মেনু থেকে products এ ক্লিক করুন "
+                                android:text="ছবিতে দেখানো স্থান থেকে ITEM এ ক্লিক করুন \n স্ক্যান করার পূর্বে অবশ্যই প্রোডাক্ট/আইটেম এড করা থাকতে হবে "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -73,7 +73,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Category এ ক্লিক করুন"
+                                android:text="ছবিতে দেখানো বারকোডের সাইনে এ ক্লিক করুন"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -87,7 +87,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="সর্বডানে উপরে + বাটনে ক্লিক করুন "
+                                android:text="বারকোড ক্যামেরা অন হলে কোডের উপর ক্যামেরা ধরে স্ক্যান করুন "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -101,7 +101,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Name এর নিচের খালি ঘরে Category এর দিন ।\n যেমনঃ fruit, drinks, office products"
+                                android:text="স্ক্যান সফল হলে একটি বিপ শুনতে পাবেন ।"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -115,21 +115,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="নাম লিখা শেষ হলে SAVE বাটনে ক্লিক করুন "
-                                android:textColor="#000"
-                                android:gravity="center"/>
-                            <TextView
-                                android:id="@+id/tv6"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="ধাপ ৬"
-                                android:textColor="#000"
-                                android:textSize="20sp" />
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Category যোগ হপদয়েছে "
+                                android:text=" শপিং লিস্টে প্রোডাক্ট যুক্ত হয়ে গেছে ।"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                         </LinearLayout>

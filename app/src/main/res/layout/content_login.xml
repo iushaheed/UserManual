@@ -50,81 +50,87 @@
                             >
 
                             <TextView
+                                android:id="@+id/tv1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="STEP 1"
-                                android:textColor="#f00"
+                                android:text="ধাপ ১"
+                                android:textColor="#000"
                                 android:textSize="20sp" />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="ONE ONE ONE ONE ONE ONE ONE ONE ONE ONE "
+                                android:text="মেশিন থেকে CASHIER APP এ ক্লিক করুন "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
+                                android:id="@+id/tv2"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="STEP 1"
-                                android:textColor="#f00"
+                                android:text="ধাপ ২"
+                                android:textColor="#000"
                                 android:textSize="20sp" />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="ONE ONE ONE ONE ONE ONE ONE ONE ONE ONE "
+                                android:text="ফোন নাম্বার এবং পিন নাম্বার দেয়ার স্ক্রীন আসবে "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
+                                android:id="@+id/tv3"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="STEP 1"
-                                android:textColor="#f00"
+                                android:text="ধাপ ৩"
+                                android:textColor="#000"
                                 android:textSize="20sp" />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="ONE ONE ONE ONE ONE ONE ONE ONE ONE ONE "
+                                android:text="রেজিস্টার করা ফোন নাম্বার দিন"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
+                                android:id="@+id/tv4"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="STEP 1"
-                                android:textColor="#f00"
+                                android:text="ধাপ ৪"
+                                android:textColor="#000"
                                 android:textSize="20sp" />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="ONE ONE ONE ONE ONE ONE ONE ONE ONE ONE "
+                                android:text="কোম্পানির দেয়া পিন নাম্বারটি লিখুন"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
+                                android:id="@+id/tv5"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="STEP 1"
-                                android:textColor="#f00"
+                                android:text="ধাপ ৫"
+                                android:textColor="#000"
                                 android:textSize="20sp" />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="ONE ONE ONE ONE ONE ONE ONE ONE "
+                                android:text="LOGIN এ ক্লিক করুন "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
+                                android:id="@+id/tv6"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
-                                android:text="STEP 1"
-                                android:textColor="#f00"
+                                android:text="ধাপ ৬"
+                                android:textColor="#000"
                                 android:textSize="20sp" />
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="ONE ONE ONE ONE ONE ONE ONE ONE ONE ONE "
+                                android:text="লগিন সম্পন্ন হয়েছে  "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                         </LinearLayout>

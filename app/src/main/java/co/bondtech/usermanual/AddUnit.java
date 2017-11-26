@@ -113,8 +113,10 @@ public class AddUnit extends AppCompatActivity
             Intent i = new Intent(this, AddCategory.class);
             startActivity(i);
             finish();
-        } else if (id == R.id.nav_three) {
-            Toast.makeText(this, "THREE", Toast.LENGTH_SHORT).show();
+        }else if (id == R.id.nav_three) {
+            Intent i = new Intent(this, ScanBarcode.class);
+            startActivity(i);
+            finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

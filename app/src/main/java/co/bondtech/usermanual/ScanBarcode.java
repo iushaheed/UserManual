@@ -2,9 +2,6 @@ package co.bondtech.usermanual;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,17 +10,44 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity
+import static android.graphics.Color.rgb;
+
+/**
+ * Created by User on 11/1/2017.
+ */
+
+public class ScanBarcode extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    ImageView mImageV;
+    int[] imgRes;
+    int head;
+    TextView mTextView1;
+    TextView mTextView2;
+    TextView mTextView3;
+    TextView mTextView4;
+    TextView mTextView5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_barcode);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        mImageV=findViewById(R.id.imageView);
+        imgRes= new int[]{R.drawable.ea, R.drawable.eb, R.drawable.ec,R.drawable.ed,R.drawable.ee,R.drawable.ef};
+        head=-1;
+
+        mTextView1=findViewById(R.id.tv1);
+        mTextView2=findViewById(R.id.tv2);
+        mTextView3=findViewById(R.id.tv3);
+        mTextView4=findViewById(R.id.tv4);
+        mTextView5=findViewById(R.id.tv5);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -61,7 +85,6 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Toast.makeText(this, "Loading www.bondtech.co", Toast.LENGTH_SHORT).show();
             return true;
         }
 
@@ -79,11 +102,11 @@ public class MainActivity extends AppCompatActivity
             startActivity(i);
             finish();
         } else if (id == R.id.nav_one) {
-            Intent i = new Intent(this, AddUnit.class);
+            Intent i = new Intent(this, ScanBarcode.class);
             startActivity(i);
             finish();
         } else if (id == R.id.nav_two) {
-            Intent i = new Intent(this, AddCategory.class);
+            Intent i = new Intent(this, ScanBarcode.class);
             startActivity(i);
             finish();
         } else if (id == R.id.nav_three) {
@@ -98,8 +121,49 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void getPreviousImg(View view) {
+//        int test=Math.abs(head--);
+        if(head>0){
+            head=head-1;
+            changeTextColor(head);
+            mImageV.setImageResource(imgRes[head]);
+        }
     }
 
     public void getNextImg(View view) {
+//        Toast.makeText(this, ""+head, Toast.LENGTH_SHORT).show();
+//        head=((head+1)%imgRes.length);
+//        mImageV.setImageResource(imgRes[head]);
+        if(head<imgRes.length-1){
+            head=head+1;
+            changeTextColor(head);
+            mImageV.setImageResource(imgRes[head]);
+        }
+    }
+
+    private void changeTextColor(int head) {
+        if(head==0){
+            mTextView5.setTextColor(rgb(0,0,0));
+            mTextView1.setTextColor(rgb(255,0,0));
+            mTextView2.setTextColor(rgb(0,0,0));
+        }else if(head==1){
+            mTextView1.setTextColor(rgb(0,0,0));
+            mTextView2.setTextColor(rgb(255,0,0));
+            mTextView3.setTextColor(rgb(0,0,0));
+
+        }else if(head==2){
+            mTextView2.setTextColor(rgb(0,0,0));
+            mTextView3.setTextColor(rgb(255,0,0));
+            mTextView4.setTextColor(rgb(0,0,0));
+
+        }else if(head==3){
+            mTextView3.setTextColor(rgb(0,0,0));
+            mTextView4.setTextColor(rgb(255,0,0));
+            mTextView5.setTextColor(rgb(0,0,0));
+
+        }else if(head==4){
+            mTextView4.setTextColor(rgb(0,0,0));
+            mTextView5.setTextColor(rgb(255,0,0));
+            mTextView1.setTextColor(rgb(0,0,0));
+        }
     }
 }

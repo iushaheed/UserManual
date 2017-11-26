@@ -13,7 +13,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import static android.graphics.Color.rgb;
 
 /**
  * Created by User on 10/31/2017.
@@ -25,6 +28,13 @@ public class LoginInfo extends AppCompatActivity
     ImageView mImageV;
     int[] imgRes;
     int head;
+    TextView mTextView1;
+    TextView mTextView2;
+    TextView mTextView3;
+    TextView mTextView4;
+    TextView mTextView5;
+    TextView mTextView6;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +43,15 @@ public class LoginInfo extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mImageV=findViewById(R.id.imageView);
-        imgRes= new int[]{R.drawable.aa, R.drawable.ab, R.drawable.ac,R.drawable.ad};
+        imgRes= new int[]{R.drawable.aa, R.drawable.ab, R.drawable.ac,R.drawable.ad,R.drawable.ae,R.drawable.af};
         head=-1;
+
+        mTextView1=findViewById(R.id.tv1);
+        mTextView2=findViewById(R.id.tv2);
+        mTextView3=findViewById(R.id.tv3);
+        mTextView4=findViewById(R.id.tv4);
+        mTextView5=findViewById(R.id.tv5);
+        mTextView6=findViewById(R.id.tv6);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -97,7 +114,9 @@ public class LoginInfo extends AppCompatActivity
             startActivity(i);
             finish();
         } else if (id == R.id.nav_three) {
-            Toast.makeText(this, "THREE", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this, ScanBarcode.class);
+            startActivity(i);
+            finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -109,13 +128,52 @@ public class LoginInfo extends AppCompatActivity
 //        int test=Math.abs(head--);
         if(head>0){
             head=head-1;
+            changeTextColor(head);
             mImageV.setImageResource(imgRes[head]);
         }
     }
 
     public void getNextImg(View view) {
 //        Toast.makeText(this, ""+head, Toast.LENGTH_SHORT).show();
-        head=((head+1)%imgRes.length);
-        mImageV.setImageResource(imgRes[head]);
+//        head=((head+1)%imgRes.length);
+//        mImageV.setImageResource(imgRes[head]);
+        if(head<imgRes.length-1){
+            head=head+1;
+            changeTextColor(head);
+            mImageV.setImageResource(imgRes[head]);
+        }
+    }
+
+    private void changeTextColor(int head) {
+        if(head==0){
+            mTextView6.setTextColor(rgb(0,0,0));
+            mTextView1.setTextColor(rgb(255,0,0));
+            mTextView2.setTextColor(rgb(0,0,0));
+        }else if(head==1){
+            mTextView1.setTextColor(rgb(0,0,0));
+            mTextView2.setTextColor(rgb(255,0,0));
+            mTextView3.setTextColor(rgb(0,0,0));
+
+        }else if(head==2){
+            mTextView2.setTextColor(rgb(0,0,0));
+            mTextView3.setTextColor(rgb(255,0,0));
+            mTextView4.setTextColor(rgb(0,0,0));
+
+        }else if(head==3){
+            mTextView3.setTextColor(rgb(0,0,0));
+            mTextView4.setTextColor(rgb(255,0,0));
+            mTextView5.setTextColor(rgb(0,0,0));
+
+        }else if(head==4){
+            mTextView4.setTextColor(rgb(0,0,0));
+            mTextView5.setTextColor(rgb(255,0,0));
+            mTextView6.setTextColor(rgb(0,0,0));
+
+        }else if(head==5){
+            mTextView5.setTextColor(rgb(0,0,0));
+            mTextView6.setTextColor(rgb(255,0,0));
+            mTextView1.setTextColor(rgb(0,0,0));
+
+        }
     }
 }

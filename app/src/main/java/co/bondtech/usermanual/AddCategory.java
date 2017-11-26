@@ -8,6 +8,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.transition.Scene;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -41,7 +42,7 @@ public class AddCategory extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mImageV=findViewById(R.id.imageView);
-        imgRes= new int[]{R.drawable.ba, R.drawable.bb, R.drawable.bc,R.drawable.bd,R.drawable.be,R.drawable.bf,R.drawable.bg};
+        imgRes= new int[]{R.drawable.ca, R.drawable.cb, R.drawable.cc,R.drawable.cd,R.drawable.ce,R.drawable.cf,R.drawable.cg};
         head=-1;
 
         mTextView1=findViewById(R.id.tv1);
@@ -112,7 +113,9 @@ public class AddCategory extends AppCompatActivity
             startActivity(i);
             finish();
         } else if (id == R.id.nav_three) {
-            Toast.makeText(this, "THREE", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this, ScanBarcode.class);
+            startActivity(i);
+            finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

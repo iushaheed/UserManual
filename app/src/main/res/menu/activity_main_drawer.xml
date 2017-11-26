@@ -16,7 +16,7 @@
             android:title="কিভাবে ক্যাটাগরি যোগ করবো ?" />
         <item
             android:id="@+id/nav_three"
-            android:title="How to 3" />
+            android:title="কিভাবে বারকোড স্ক্যান করবো ? " />
     </group>
 
     <item android:title="BOND Technologies">
