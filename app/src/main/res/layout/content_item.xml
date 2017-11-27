@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="co.bondtech.usermanual.AddCategory"
-    tools:showIn="@layout/app_bar_category"
+    tools:context="co.bondtech.usermanual.AddItem"
+    tools:showIn="@layout/app_bar_item"
     >
     <RelativeLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:src="@drawable/c" />
+                android:src="@drawable/d" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -73,7 +73,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Category এ ক্লিক করুন"
+                                android:text="All Items এ ক্লিক করুন"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -101,7 +101,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Name এর নিচের খালি ঘরে Category এর দিন ।\n যেমনঃ fruit, drinks, office products"
+                                android:text="টিক চিহ্ন দেয়া ঘর গুলো পুরন করুন"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -115,7 +115,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="নাম লিখা শেষ হলে SAVE বাটনে ক্লিক করুন "
+                                android:text="িখা শেষ হলে SAVE বাটনে ক্লিক করুন "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -129,7 +129,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Category যোগ হপেছে "
+                                android:text="Item যোগ হয়েছে "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                         </LinearLayout>

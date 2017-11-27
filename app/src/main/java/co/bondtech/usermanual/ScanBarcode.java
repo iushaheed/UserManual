@@ -110,6 +110,11 @@ public class ScanBarcode extends AppCompatActivity
             startActivity(i);
             finish();
         } else if (id == R.id.nav_three) {
+            Intent i = new Intent(this, AddItem.class);
+            startActivity(i);
+            finish();
+        }
+        else if (id == R.id.nav_four) {
             Intent i = new Intent(this, ScanBarcode.class);
             startActivity(i);
             finish();

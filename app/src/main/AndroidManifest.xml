@@ -25,12 +25,19 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".AddUnit"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".AddCategory"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".ScanBarcode"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".AddItem"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>

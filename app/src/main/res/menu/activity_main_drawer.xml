@@ -6,19 +6,55 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_login"
-            android:title="কিভাবে লগইন করবো ?"
+            android:title="কিভাবে লগইন/Login করবো ?"
             />
-        <item
-            android:id="@+id/nav_one"
-            android:title="কিভাবে ইউনিট যোগ করবো ?" />
-        <item
-            android:id="@+id/nav_two"
-            android:title="কিভাবে ক্যাটাগরি যোগ করবো ?" />
-        <item
-            android:id="@+id/nav_three"
-            android:title="কিভাবে বারকোড স্ক্যান করবো ? " />
+        <item android:title="                                   "/>
+
+
     </group>
 
-    <item android:title="BOND Technologies">
-    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_one"
+            android:title="কিভাবে ইউনিট/Unit যোগ করবো ?" />
+        <item
+            android:id="@+id/nav_two"
+            android:title="কিভাবে ক্যাটাগরি/Category যোগ করবো ?" />
+        <item
+            android:id="@+id/nav_three"
+            android:title="কিভাবে আইটেম/Item যোগ করবো ?" />
+        <item android:title="                                   "/>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_four"
+            android:title="কিভাবে বারকোড থেকে বিক্রি করবো ? " />
+        <item
+            android:id="@+id/nav_five"
+            android:title="কিভাবে যোগ করা আইটেম থেকে বিক্রি করবো ?" />
+        <item
+            android:id="@+id/nav_six"
+            android:title="কিভাবে যোগ না করা আইটেম বিক্রি করবো ?" />
+        <item
+            android:id="@+id/nav_seven"
+            android:title="কিভাবে রিসিপ্ট চেক করবো ? " />
+        <item android:title="                                   "/>
+
+    </group>
+    <group>
+        <item
+            android:id="@+id/nav_eight"
+            android:title="রিপোর্ট কিভাবে দেখবো ?" />
+        <item
+            android:id="@+id/nav_nine"
+            android:title="বাকী চেক/প্রিন্ট/পরিশোধ" />
+        <item
+            android:id="@+id/nav_ten"
+            android:title="কিভাবে ভ্যাট এক্টিভেট করবো ? " />
+    </group>
+
+
+
+    <item android:title="BOND Technologies"> </item>
 </menu>
