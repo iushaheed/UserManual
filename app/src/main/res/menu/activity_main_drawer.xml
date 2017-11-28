@@ -22,7 +22,7 @@
             android:title="কিভাবে ক্যাটাগরি/Category যোগ করবো ?" />
         <item
             android:id="@+id/nav_three"
-            android:title="কিভাবে আইটেম/Item যোগ করবো ?" />
+            android:title="কিভাবে প্রোডাক্ট/Item যোগ করবো ?" />
         <item android:title="                                   "/>
     </group>
 
@@ -32,25 +32,22 @@
             android:title="কিভাবে বারকোড থেকে বিক্রি করবো ? " />
         <item
             android:id="@+id/nav_five"
-            android:title="কিভাবে যোগ করা আইটেম থেকে বিক্রি করবো ?" />
+            android:title="কিভাবে বিক্রি করবো ?" />
         <item
             android:id="@+id/nav_six"
-            android:title="কিভাবে যোগ না করা আইটেম বিক্রি করবো ?" />
-        <item
-            android:id="@+id/nav_seven"
             android:title="কিভাবে রিসিপ্ট চেক করবো ? " />
         <item android:title="                                   "/>
 
     </group>
     <group>
         <item
-            android:id="@+id/nav_eight"
+            android:id="@+id/nav_seven"
             android:title="রিপোর্ট কিভাবে দেখবো ?" />
         <item
-            android:id="@+id/nav_nine"
+            android:id="@+id/nav_eight"
             android:title="বাকী চেক/প্রিন্ট/পরিশোধ" />
         <item
-            android:id="@+id/nav_ten"
+            android:id="@+id/nav_nine"
             android:title="কিভাবে ভ্যাট এক্টিভেট করবো ? " />
     </group>
 

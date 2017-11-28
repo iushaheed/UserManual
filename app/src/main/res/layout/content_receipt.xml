@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="co.bondtech.usermanual.AddItem"
-    tools:showIn="@layout/app_bar_item"
+    tools:context="co.bondtech.usermanual.Receipt"
+    tools:showIn="@layout/app_bar_receipt"
     >
     <RelativeLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:src="@drawable/d" />
+                android:src="@drawable/g" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -60,7 +60,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="মেনু থেকে products এ ক্লিক করুন "
+                                android:text="প্রোডাক্ট সিলেক্ট করা অবস্থায় কিংবা সিলেক্টের পর ছবিতে দেখানো লাল বৃত্ত দেখানো স্থানে ক্লিক করুন।"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -74,7 +74,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="All Items এ ক্লিক করুন"
+                                android:text=" উদাহরনঃ ক্রেতা Shirt XL প্রোডাক্ট টি লিস্ট থেকে বাদ দিতে চাইছেন ।"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -88,7 +88,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="সর্বডানে উপরে + বাটনে ক্লিক করুন "
+                                android:text="এইটেম বাদ দিতে আইটেমের উপর আঙ্গুল রেখে ছবির মতো করে ডান থেকে বামে টান দিন ।\nপ্রোডাক্ট রিসিপ্ট থেকে বাদ হয়ে গেছে ।"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -102,37 +102,11 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="টিক চিহ্ন দেয়া ঘর গুলো পুরন করুন"
+                                android:text="উদাহরনঃ ক্রেতা Jeans প্রোডাক্ট টি ১ টির পরিবর্তে ৫ টি নিতে চাইছেন ।\n1 এর উপরে(উপরের লাল গোলাকার) ক্লিক করুন, কীবোর্ড থেকে 5(নিচের লাল গোলাকার) এ ক্লিক করুন।"
                                 android:textColor="#000"
                                 android:gravity="center"/>
-                            <TextView
-                                android:id="@+id/tv5"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="ধাপ ৫"
-                                android:textColor="#000"
-                                android:textSize="20sp" />
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="িখা শেষ হলে SAVE বাটনে ক্লিক করুন "
-                                android:textColor="#000"
-                                android:gravity="center"/>
-                            <TextView
-                                android:id="@+id/tv6"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="ধাপ ৬"
-                                android:textColor="#000"
-                                android:textSize="20sp" />
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Item যোগ হয়েছে "
-                                android:textColor="#000"
-                                android:gravity="center"/>
+
+
                         </LinearLayout>
                     </ScrollView>
                     <LinearLayout

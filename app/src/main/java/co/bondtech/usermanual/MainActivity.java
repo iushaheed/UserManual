@@ -96,6 +96,21 @@ public class MainActivity extends AppCompatActivity
             startActivity(i);
             finish();
         }
+        else if (id == R.id.nav_five) {
+            Intent i = new Intent(this, Sell.class);
+            startActivity(i);
+            finish();
+        }
+        else if (id == R.id.nav_six) {
+            Intent i = new Intent(this, Receipt.class);
+            startActivity(i);
+            finish();
+        }
+        else if (id == R.id.nav_seven) {
+            Intent i = new Intent(this, Report.class);
+            startActivity(i);
+            finish();
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

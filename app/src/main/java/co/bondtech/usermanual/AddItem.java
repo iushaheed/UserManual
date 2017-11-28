@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import static android.graphics.Color.rgb;
@@ -26,6 +27,7 @@ public class AddItem extends AppCompatActivity
     ImageView mImageV;
     int[] imgRes;
     int head;
+    ScrollView sv;
     TextView mTextView1;
     TextView mTextView2;
     TextView mTextView3;
@@ -42,7 +44,7 @@ public class AddItem extends AppCompatActivity
         mImageV=findViewById(R.id.imageView);
         imgRes= new int[]{R.drawable.da, R.drawable.db, R.drawable.dc,R.drawable.dd,R.drawable.de,R.drawable.df,R.drawable.dg};
         head=-1;
-
+        sv=findViewById(R.id.scrollView);
         mTextView1=findViewById(R.id.tv1);
         mTextView2=findViewById(R.id.tv2);
         mTextView3=findViewById(R.id.tv3);
@@ -103,11 +105,11 @@ public class AddItem extends AppCompatActivity
             startActivity(i);
             finish();
         } else if (id == R.id.nav_one) {
-            Intent i = new Intent(this, AddItem.class);
+            Intent i = new Intent(this, AddUnit.class);
             startActivity(i);
             finish();
         } else if (id == R.id.nav_two) {
-            Intent i = new Intent(this, AddItem.class);
+            Intent i = new Intent(this, AddCategory.class);
             startActivity(i);
             finish();
         } else if (id == R.id.nav_three) {
@@ -117,6 +119,21 @@ public class AddItem extends AppCompatActivity
         }
         else if (id == R.id.nav_four) {
             Intent i = new Intent(this, ScanBarcode.class);
+            startActivity(i);
+            finish();
+        }
+        else if (id == R.id.nav_five) {
+            Intent i = new Intent(this, Sell.class);
+            startActivity(i);
+            finish();
+        }
+        else if (id == R.id.nav_six) {
+            Intent i = new Intent(this, Receipt.class);
+            startActivity(i);
+            finish();
+        }
+        else if (id == R.id.nav_seven) {
+            Intent i = new Intent(this, Report.class);
             startActivity(i);
             finish();
         }
@@ -151,30 +168,36 @@ public class AddItem extends AppCompatActivity
             mTextView6.setTextColor(rgb(0,0,0));
             mTextView1.setTextColor(rgb(255,0,0));
             mTextView2.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView1.getTop());
         }else if(head==1){
             mTextView1.setTextColor(rgb(0,0,0));
             mTextView2.setTextColor(rgb(255,0,0));
             mTextView3.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView2.getTop());
 
         }else if(head==2){
             mTextView2.setTextColor(rgb(0,0,0));
             mTextView3.setTextColor(rgb(255,0,0));
             mTextView4.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView3.getTop());
 
         }else if(head==3){
             mTextView3.setTextColor(rgb(0,0,0));
             mTextView4.setTextColor(rgb(255,0,0));
             mTextView5.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView4.getTop());
 
         }else if(head==4){
             mTextView4.setTextColor(rgb(0,0,0));
             mTextView5.setTextColor(rgb(255,0,0));
             mTextView6.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView5.getTop());
         }
         else if(head==5){
             mTextView5.setTextColor(rgb(0,0,0));
             mTextView6.setTextColor(rgb(255,0,0));
             mTextView1.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView6.getTop());
         }
     }
 }

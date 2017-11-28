@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="co.bondtech.usermanual.AddItem"
-    tools:showIn="@layout/app_bar_item"
+    tools:context="co.bondtech.usermanual.Report"
+    tools:showIn="@layout/app_bar_report"
     >
     <RelativeLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:src="@drawable/d" />
+                android:src="@drawable/h" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -60,7 +60,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="মেনু থেকে products এ ক্লিক করুন "
+                                android:text="মেনু থেকে Cashier এ ক্লিক করুন "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -74,7 +74,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="All Items এ ক্লিক করুন"
+                                android:text="ITEM এ ক্লিক করুন\nপ্রোডাক্টের লিস্ট আসবে নিচে "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -88,7 +88,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="সর্বডানে উপরে + বাটনে ক্লিক করুন "
+                                android:text="যেসব প্রোডাক্ট বিক্রি হবে সেগুলোতে টাচ করুন।\nএকই জিনিস একের বেশি লাগলে যতবার লাগবে ততবার টাচ করুন।\nনীল তীর দেয়া স্থানে সর্বমোট মুল্য দেখতে পারবেন\nলাল তীর দেয়া যায়গায় টাচ করলে কি কি যোগ করলেন তার বিবরন দেখতে পারবেন,প্রয়োজনে সেখান থেকে আইটেম/প্রোডাক্ট বাদ দিতে পারবেন\n  "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -102,7 +102,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="টিক চিহ্ন দেয়া ঘর গুলো পুরন করুন"
+                                android:text="বিবরন থেকে প্রয়োজন মতো সংশোধন করে CHARGE এ ক্লিক করুন"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -116,7 +116,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="িখা শেষ হলে SAVE বাটনে ক্লিক করুন "
+                                android:text="এই ধাপটি খুবই গুরুত্বপুর্ন  !\nএই ধাপে আপনার হিসাব গননা হবে।\nযদি বাকিতে বিক্রি করছেন তাহলে উপরে ফিনিশে/FINISH এ ক্লিক করুন\nনগদে বিক্রি করলে নিচের অংশে প্রদত্ত কিবোর্ড থেকে টাকার পরিমান লিখুন\nযেমনঃ বিল ২৩৬৫ টাকা, ক্রেতা আপনাকে ২৫০০ টাকা দিলেন, আপনি কিবোর্ডে ২৫০০ লিখলেন, তাহলে স্ক্রীনে দেখাবে ক্রেতাকে ১৩৫ টাকা ফেরত দিতে হবে ।"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -130,7 +130,35 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Item যোগ হয়েছে "
+                                android:text="হিসাব চেক করে ফিনিশ/FINISH এ ক্লিক করুন"
+                                android:textColor="#000"
+                                android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/tv7"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="ধাপ ৭"
+                                android:textColor="#000"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="বাকীতে বিক্রয়ের ক্ষেত্রে এই ধাপটি বেশ গুরুত্বপুর্ন । বাকিতে বিক্রয় করলে অবশ্য এইখানে ক্রেতার নাম ও ফোন নাম্বার দেয়া লাগবে যাতে বাকী পরিষোধের সময় এই হিসাব খুজে পাওয়া যায়\n\n সর্বশেষে PRINT RECEIPT এ ক্লিক করুন "
+                                android:textColor="#000"
+                                android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/tv8"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="ধাপ ৮"
+                                android:textColor="#000"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কাজ সম্পন্ন হয়েছে, প্রিন্টার থেকে রিসিপ্ট ছিড়ে ক্রেতাকে দিন ।\nক্রেতার বাকি অর্থ ফেরত দিন :) "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                         </LinearLayout>

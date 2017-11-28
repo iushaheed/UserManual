@@ -1,9 +1,7 @@
 package co.bondtech.usermanual;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,7 +14,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import static android.graphics.Color.rgb;
 
@@ -24,7 +21,7 @@ import static android.graphics.Color.rgb;
  * Created by User on 11/1/2017.
  */
 
-public class AddUnit extends AppCompatActivity
+public class Sell extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     ImageView mImageV;
@@ -37,16 +34,19 @@ public class AddUnit extends AppCompatActivity
     TextView mTextView4;
     TextView mTextView5;
     TextView mTextView6;
+    TextView mTextView7;
+    TextView mTextView8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_unit);
+        setContentView(R.layout.activity_sell);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mImageV=findViewById(R.id.imageView);
-        imgRes= new int[]{R.drawable.ba, R.drawable.bb, R.drawable.bc,R.drawable.bd,R.drawable.be,R.drawable.bf,R.drawable.bg};
+        imgRes= new int[]{R.drawable.fa, R.drawable.fb, R.drawable.fc,R.drawable.fd,R.drawable.fe,R.drawable.ff,R.drawable.fg,R.drawable.fh};
         head=-1;
+
         sv=findViewById(R.id.scrollView);
         mTextView1=findViewById(R.id.tv1);
         mTextView2=findViewById(R.id.tv2);
@@ -54,6 +54,8 @@ public class AddUnit extends AppCompatActivity
         mTextView4=findViewById(R.id.tv4);
         mTextView5=findViewById(R.id.tv5);
         mTextView6=findViewById(R.id.tv6);
+        mTextView7=findViewById(R.id.tv7);
+        mTextView8=findViewById(R.id.tv8);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -168,10 +170,11 @@ public class AddUnit extends AppCompatActivity
 
     private void changeTextColor(int head) {
         if(head==0){
-            mTextView6.setTextColor(rgb(0,0,0));
+            mTextView8.setTextColor(rgb(0,0,0));
             mTextView1.setTextColor(rgb(255,0,0));
             mTextView2.setTextColor(rgb(0,0,0));
             sv.scrollTo(0, mTextView1.getTop());
+
         }else if(head==1){
             mTextView1.setTextColor(rgb(0,0,0));
             mTextView2.setTextColor(rgb(255,0,0));
@@ -199,9 +202,20 @@ public class AddUnit extends AppCompatActivity
         }else if(head==5){
             mTextView5.setTextColor(rgb(0,0,0));
             mTextView6.setTextColor(rgb(255,0,0));
-            mTextView1.setTextColor(rgb(0,0,0));
+            mTextView7.setTextColor(rgb(0,0,0));
             sv.scrollTo(0, mTextView6.getTop());
-
+        }
+        else if(head==6){
+            mTextView6.setTextColor(rgb(0,0,0));
+            mTextView7.setTextColor(rgb(255,0,0));
+            mTextView8.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView7.getTop());
+        }
+        else if(head==7){
+            mTextView7.setTextColor(rgb(0,0,0));
+            mTextView8.setTextColor(rgb(255,0,0));
+            mTextView1.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView8.getTop());
         }
     }
 }

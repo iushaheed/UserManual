@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +29,7 @@ public class LoginInfo extends AppCompatActivity
     ImageView mImageV;
     int[] imgRes;
     int head;
+    ScrollView sv;
     TextView mTextView1;
     TextView mTextView2;
     TextView mTextView3;
@@ -45,7 +47,7 @@ public class LoginInfo extends AppCompatActivity
         mImageV=findViewById(R.id.imageView);
         imgRes= new int[]{R.drawable.aa, R.drawable.ab, R.drawable.ac,R.drawable.ad,R.drawable.ae,R.drawable.af};
         head=-1;
-
+        sv=findViewById(R.id.scrollView);
         mTextView1=findViewById(R.id.tv1);
         mTextView2=findViewById(R.id.tv2);
         mTextView3=findViewById(R.id.tv3);
@@ -154,30 +156,36 @@ public class LoginInfo extends AppCompatActivity
             mTextView6.setTextColor(rgb(0,0,0));
             mTextView1.setTextColor(rgb(255,0,0));
             mTextView2.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView1.getTop());
         }else if(head==1){
             mTextView1.setTextColor(rgb(0,0,0));
             mTextView2.setTextColor(rgb(255,0,0));
             mTextView3.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView2.getTop());
 
         }else if(head==2){
             mTextView2.setTextColor(rgb(0,0,0));
             mTextView3.setTextColor(rgb(255,0,0));
             mTextView4.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView3.getTop());
 
         }else if(head==3){
             mTextView3.setTextColor(rgb(0,0,0));
             mTextView4.setTextColor(rgb(255,0,0));
             mTextView5.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView4.getTop());
 
         }else if(head==4){
             mTextView4.setTextColor(rgb(0,0,0));
             mTextView5.setTextColor(rgb(255,0,0));
             mTextView6.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView5.getTop());
 
         }else if(head==5){
             mTextView5.setTextColor(rgb(0,0,0));
             mTextView6.setTextColor(rgb(255,0,0));
             mTextView1.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView6.getTop());
 
         }
     }
