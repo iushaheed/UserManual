@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="co.bondtech.usermanual.AddItem"
-    tools:showIn="@layout/app_bar_item"
+    tools:context="co.bondtech.usermanual.Vat"
+    tools:showIn="@layout/app_bar_vat"
     >
     <RelativeLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:src="@drawable/d" />
+                android:src="@drawable/j" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -60,7 +60,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="মেনু থেকে products এ ক্লিক করুন "
+                                android:text="মেনু থেকে Settings এ ক্লিক করুন "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -74,7 +74,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="All Items এ ক্লিক করুন"
+                                android:text="আপনার ব্যবসা VAT আওতায় থাকলে আপনাকে অবশ্যই VAT এক্টিভ করে নিতে হবে\n\n১. Vat Active এ টিক চিন্নহ দিন\n\n২. ভ্যাট রেটে আপনার ব্যবসার নির্ধারিত ভ্যাট রেট দিন\n\n৩. আপনার ব্যবসার বৈধ ভ্যাট নিবন্ধন নাম্বার দিয়ে Save Changes বাটনে ক্লিক করুন ।"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -88,7 +88,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="সর্বডানে উপরে + বাটনে ক্লিক করুন "
+                                android:text="YES দিন"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -102,7 +102,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="টিক চিহ্ন দেয়া ঘর গুলো পুরন করুন"
+                                android:text="OK দিন"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -116,23 +116,10 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="লেখা শেষ হলে SAVE বাটনে ক্লিক করুন "
+                                android:text="শেষ !"
                                 android:textColor="#000"
                                 android:gravity="center"/>
-                            <TextView
-                                android:id="@+id/tv6"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="ধাপ ৬"
-                                android:textColor="#000"
-                                android:textSize="20sp" />
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Item যোগ হয়েছে "
-                                android:textColor="#000"
-                                android:gravity="center"/>
+
                         </LinearLayout>
                     </ScrollView>
                     <LinearLayout

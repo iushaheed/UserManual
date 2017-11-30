@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="co.bondtech.usermanual.AddItem"
-    tools:showIn="@layout/app_bar_item"
+    tools:context="co.bondtech.usermanual.Due"
+    tools:showIn="@layout/app_bar_due"
     >
     <RelativeLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:src="@drawable/d" />
+                android:src="@drawable/i" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -60,7 +60,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="মেনু থেকে products এ ক্লিক করুন "
+                                android:text="মেনু থেকে Dues এ ক্লিক করুন "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -74,7 +74,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="All Items এ ক্লিক করুন"
+                                android:text="বকেয়ার লিস্ট দেখতে পাবেন কাস্টোমারের নাম এবং ফোন নাম্বার সহ ।\nসব প্রিন্ট করতে চাইলে তারকা চিন্নহিত Print All Dues এ ক্লিক করুন ।\nআর কারো বকেয়া পরিশোধ করতে চাইলে তার নাম এর উপর ক্লিক করুন ।\n\nধরুন, Rahim সাহেবের ২৩১০ টাকা বাকী আছে ,যেটা তিনি পরিশোধ করবেন এখন ।"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -88,7 +88,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="সর্বডানে উপরে + বাটনে ক্লিক করুন "
+                                android:text="1. কাস্টোমারের নাম\n2. (৳0.00) এই বিলের বিপরিতে এই পর্যন্ত প্রদত্ত টাকার পরিমান\n3. বকেয়া\n4. দিন অনুযায়ী বকেয়ার পরিমান\n5. এই কাস্টোমারের সকল বকেয়ার প্রিন্ট\n6. বকেয়ার কিছু অংশ যদি পরিশোধ করতে হয় তাহলে এইখানে ক্লিক করুন,\nধরুন এই কাস্টোমারের বকেয়া ২৩১০ টাকা এবং তিনি আজকে ১০০০ টাকা পরিশোধ করতে চাইছেন এইক্ষেত্রে এটা ব্যবহার করুন"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -102,7 +102,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="টিক চিহ্ন দেয়া ঘর গুলো পুরন করুন"
+                                android:text="টাকার পরিমান লিখার পাতা আসবে"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -116,7 +116,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="লেখা শেষ হলে SAVE বাটনে ক্লিক করুন "
+                                android:text="টাকার পরিমান লিখে লাল বাটনে ক্লিক করুন"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -130,7 +130,63 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Item যোগ হয়েছে "
+                                android:text="নিশ্চিত করতে YES আর কেন্সেল করতে NO তে ক্লিক করুন"
+                                android:textColor="#000"
+                                android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/tv7"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="ধাপ ৭"
+                                android:textColor="#000"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="7,8,9 চিন্নহিত অংশে দেখুন বকেয়া আপডেট/হালনাগাদ হয়ে গেছে , এখন যদি কারো বকেয়ার সম্পূর্ণ পরিশোধ করতে চান তাহলে 9 এ ক্লিক করুন ।"
+                                android:textColor="#000"
+                                android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/tv8"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="ধাপ ৮"
+                                android:textColor="#000"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="প্রিন্ট করতে চাইলে সবুজ বাটনে ক্লিক করুন\nআর সম্পুর্ন পরিশোধ করতে চাইলে নিচের লাল বাটনে ক্লিক করুন ।"
+                                android:textColor="#000"
+                                android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/tv9"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="ধাপ ৯"
+                                android:textColor="#000"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="কনফার্ম করতে YES, কেন্সেল করতে NO তে ক্লিক করুন "
+                                android:textColor="#000"
+                                android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/tv10"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="ধাপ ১০"
+                                android:textColor="#000"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="আপডেট হয়ে গেছে ।"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                         </LinearLayout>

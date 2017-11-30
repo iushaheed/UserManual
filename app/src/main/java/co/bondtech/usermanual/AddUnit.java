@@ -77,7 +77,7 @@ public class AddUnit extends AppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+        // Inflate the menu; this adds items to the action bar ifa it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
@@ -137,6 +137,16 @@ public class AddUnit extends AppCompatActivity
         }
         else if (id == R.id.nav_seven) {
             Intent i = new Intent(this, Report.class);
+            startActivity(i);
+            finish();
+        }
+        else if (id == R.id.nav_eight) {
+            Intent i = new Intent(this, Due.class);
+            startActivity(i);
+            finish();
+        }
+        else if (id == R.id.nav_nine) {
+            Intent i = new Intent(this, Vat.class);
             startActivity(i);
             finish();
         }

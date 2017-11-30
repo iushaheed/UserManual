@@ -102,7 +102,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Name এর নিচের খালি ঘরে Unit এর নাম দিন । যেমনঃ kg, Liter, gram"
+                                android:text="Name এর খালি ঘরে Unit এর নাম দিন । যেমনঃ kg, Liter, gram"
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
@@ -116,7 +116,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="নাম লিখা শেষ হলে SAVE বাটনে ক্লিক করুন "
+                                android:text="নাম লেখা শেষ হলে SAVE বাটনে ক্লিক করুন "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView

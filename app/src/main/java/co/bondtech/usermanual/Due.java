@@ -21,7 +21,7 @@ import static android.graphics.Color.rgb;
  * Created by User on 11/1/2017.
  */
 
-public class Receipt extends AppCompatActivity
+public class Due extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     ImageView mImageV;
@@ -35,15 +35,18 @@ public class Receipt extends AppCompatActivity
     TextView mTextView5;
     TextView mTextView6;
     TextView mTextView7;
+    TextView mTextView8;
+    TextView mTextView9;
+    TextView mTextView10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_receipt);
+        setContentView(R.layout.activity_due);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mImageV=findViewById(R.id.imageView);
-        imgRes= new int[]{R.drawable.ga, R.drawable.gb, R.drawable.gc,R.drawable.gd,R.drawable.ge,R.drawable.gf,R.drawable.gg};
+        imgRes= new int[]{R.drawable.ia, R.drawable.ib, R.drawable.ic,R.drawable.id,R.drawable.ie,R.drawable.ifa,R.drawable.ig,R.drawable.ih,R.drawable.ii,R.drawable.ij};
         head=-1;
 
         sv=findViewById(R.id.scrollView);
@@ -54,6 +57,9 @@ public class Receipt extends AppCompatActivity
         mTextView5=findViewById(R.id.tv5);
         mTextView6=findViewById(R.id.tv6);
         mTextView7=findViewById(R.id.tv7);
+        mTextView8=findViewById(R.id.tv8);
+        mTextView9=findViewById(R.id.tv9);
+        mTextView10=findViewById(R.id.tv10);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -126,7 +132,7 @@ public class Receipt extends AppCompatActivity
             finish();
         }
         else if (id == R.id.nav_five) {
-            Intent i = new Intent(this, Sell.class);
+            Intent i = new Intent(this, Due.class);
             startActivity(i);
             finish();
         }
@@ -178,7 +184,7 @@ public class Receipt extends AppCompatActivity
 
     private void changeTextColor(int head) {
         if(head==0){
-            mTextView7.setTextColor(rgb(0,0,0));
+            mTextView10.setTextColor(rgb(0,0,0));
             mTextView1.setTextColor(rgb(255,0,0));
             mTextView2.setTextColor(rgb(0,0,0));
             sv.scrollTo(0, mTextView1.getTop());
@@ -216,8 +222,26 @@ public class Receipt extends AppCompatActivity
         else if(head==6){
             mTextView6.setTextColor(rgb(0,0,0));
             mTextView7.setTextColor(rgb(255,0,0));
-            mTextView1.setTextColor(rgb(0,0,0));
+            mTextView8.setTextColor(rgb(0,0,0));
             sv.scrollTo(0, mTextView7.getTop());
+        }
+        else if(head==7){
+            mTextView7.setTextColor(rgb(0,0,0));
+            mTextView8.setTextColor(rgb(255,0,0));
+            mTextView9.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView8.getTop());
+        }
+        else if(head==8){
+            mTextView8.setTextColor(rgb(0,0,0));
+            mTextView9.setTextColor(rgb(255,0,0));
+            mTextView10.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView9.getTop());
+        }
+        else if(head==9){
+            mTextView9.setTextColor(rgb(0,0,0));
+            mTextView10.setTextColor(rgb(255,0,0));
+            mTextView1.setTextColor(rgb(0,0,0));
+            sv.scrollTo(0, mTextView10.getTop());
         }
     }
 }
