@@ -60,7 +60,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="মেনু থেকে Cashier এ ক্লিক করুন "
+                                android:text="মেনু থেকে Cashier এ ক্লিক করুন\n\n এখানে শুধুমাত্র স্টকে যোগ করা প্রোডাক্ট বিক্রি দেখানো হলো\n\nএছাড়াও যোগ না করা প্রোডাক্ট সরাসরি বিক্রি করা যায় KEYPAD অপশনের মাধ্যমে । \n\nসতর্কতাঃ\nকিন্তু সরাসরি বিক্রি করলে রিপোর্ট এবং বেচা-কেনার সঠিক হিসাব থাকবে না তাই এই পদ্বতিটি নিরুৎসাহিত করা হয় । "
                                 android:textColor="#000"
                                 android:gravity="center"/>
                             <TextView
